@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+html {
+    font-size: 17.5px;
+}
+body{
+    font-family: "Barlow Semi Condensed";
+    color: white;
+    letter-spacing: 1px;
+    line-height: 1.35;
+    background: #ecf2f8;
+}
+
+.container{
+    width: 83vw;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+p{
+    color: rgb(230, 230, 230);
+}
+
+.card{
+    padding: 32px;
+    border-radius: 10px;
+    margin: 13.2px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.card h3{
+    font-size: 1.1875rem;
+     font-weight: 600;
+     z-index: 2;
+}
+.card p{
+    font-size: 0.9rem;
+    font-weight: 500;
+
+}
+#card1{
+    position: relative;
+    grid-column: 1/span 2;
+    background: #7541c8;
+    z-index: -2;
+
+}
+#card2{
+    background-color: #48556a;
+}
+#card3{
+    background-color: white;
+    grid-column: 4/ 5;
+    grid-row: 1/span 3;
+    color: #48556a;
+
+}
+#card4{
+    background-color: white;
+    color: #48556a;
+}
+#card4 p,#card3 p{
+    color: #48556acc;
+
+}
+#card5{
+    background-color: #19212e;
+    grid-column: 2/4;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+.status{
+    display: block;
+    opacity: .85;
+}
+.name{
+    font-weight: 600;
+
+}
+.profile-pic{
+    border-radius: 50%;
+    margin-right: 18px;
+    width: 38px;
+    height: 38px;
+    border:2px solid rgb(235, 235, 235)
+}
+#card4 img,#card3 img{
+    border:3px solid #48556a;
+
+}
+#quotation{
+    position: absolute;
+    right: 95px;
+    top :0px;
+    width: 125px;
+    height: 125px;
+    z-index: -1;
+     opacity: .9;
+}
+
+
+@media (max-width: 1400px) {
+    html {
+        font-size: 14.5px;
+      }
+      .container{
+          width: 92vw;
+          
+      }
+}
+@media (max-width: 1200px) {
+    html {
+      font-size: 14.5px;
+    }
+    .container{
+        width: 95vw;
+        
+    }
+}
+  @media (max-width: 1000px) {
+    html {
+        font-size: 15.5px;
+      }
+    .container{
+        width: 90vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    #card1,#card2,#card3,#card4,#card5{
+        grid-column: 1/1;
+    }
+  }
+
+
